@@ -44,14 +44,5 @@ public class TestingWebInterfacesTest {
         String text = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
 
-
-   /* open("http://localhost:9999");
-    SelenideElement form = $("[data-test-id=callback-form]");
-    form.$("[data-test-id=name] input").setValue("Анна Иванова");
-    form.$("[data-test-id=phone] input").setValue("+79990000000");
-    form.$("[data-test-id=agreement]").click();
-    form.$("[data-test-id=submit]").click();
-    $("alert-success").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время"));
-}*/
     }
 }
