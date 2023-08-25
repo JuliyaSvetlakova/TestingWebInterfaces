@@ -76,7 +76,6 @@ public class TestingWebInterfacesNegativeTest {
     void failureWithAnUnmarkedCheckbox() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванова Анна Ивановна");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79990000000");
-        //driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
         assertTrue(driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")).isDisplayed());
     }
